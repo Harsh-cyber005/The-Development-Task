@@ -687,7 +687,7 @@ body{
         transform: perspective(500px) rotateX(60deg);
     }
     page-2{
-        display: flex;
+        display: none;
     }
     #back-button{
         position: absolute;
