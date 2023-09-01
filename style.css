@@ -989,7 +989,7 @@ page-2{
 
 @media screen and (max-width : 560px) and (min-width : 343px) {
     page-2{
-        display: flex;
+        display: none;
         align-items: flex-start;
         padding-top: 11vh;
     }
