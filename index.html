@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codeforces Leader-Board</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+</head>
+<body id="main-body">
+    <div id="nav">
+        <div id="left-nav">
+            <div id="logo">
+                <img id="logo-image" src=".\assets\logo.png" alt="">
+                <div id="logo-name">Codeforces <span>Leaderboard</span></div>
+            </div>
+        </div>
+        <div id="middle-nav">
+            <div id="sidiv"><img  id="search-icon" src=".\assets\search-icon.png" alt=""></div>
+            <input placeholder="Search Profile (Press GO)" id="search">
+            <button id="search-go">GO</button>
+        </div>
+        <div id="right-nav">
+            <button class="button" id="nav-item1">Home</button>
+            <button class="button" id="nav-item2">About Me</button>
+            <button class="button" id="nav-item3">Codeforces</button>
+        </div>
+        <div id="search-button"><img  id="search-icon" src=".\assets\search-icon.png" alt=""></div>
+        <div id="drop-down"><img src=".\assets\hamburger-menu-svgrepo-com.png" alt="" id="search-icon"></div>
+    </div>
+    <div id="side-menu">
+        <ul id="unodli">
+            <li class="prevent-select" id="list-item1">Home</li>
+            <li class="prevent-select" id="list-item2">About Me</li>
+            <li class="prevent-select" id="list-item3">Codeforces</li>
+            <div id="drop-side">
+                <div id="side-menu-up">
+                    <div id="side-menu-item-1">TOP 10 USERS</div>
+                    <div id="side-menu-item-2">TOP 100 USERS</div>
+                </div>
+                <div id="side-menu-down">
+                    <div id="side-menu-item-3">TOP 1000 USERS</div>
+                    <div id="side-menu-item-4">IIT KGP</div>
+                </div>
+            </div>
+        </ul>
+    </div>
+    <div id="body-bar">
+        <div id="search-bar-div"><input placeholder="Search Profile" id="search-bar"><button id="go">GO</button></div>
+    </div>
+    <div id="table-container">
+        <div id="main-table">
+            <div class="row-odd" id="heading">
+                <div id="left-heading">
+                    <img id="crown" src=".\assets\crown.png" alt="">
+                    TOP USERS BY <span>ALL TIME</span> RATING
+                </div>
+                <div id="right-heading">
+                    <button class="button" id="drop-button"><span id="inner-span">SELECT </span><img id="arrow-img" src=".\assets\arrow.png" alt=""></button>
+                    <div id="drop-menu">
+                        <div id="item-1">TOP TEN USERS</div>
+                        <div id="item-2">TOP HUNDRED USERS</div>
+                        <div id="item-3">TOP THOUSAND USERS</div>
+                        <div id="item-4">IIT KGP</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-odd" id="content">
+                <div id="content-in">
+                    <div id="content-in-user">User</div>
+                    <div id="content-in-rating">Rating</div>
+                    <div id="content-in-rank">Rank</div>
+                </div>
+            </div>
+            <div id="loader-body">
+                <div class="loader">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="second"></div>
+    <page-2>
+        <button id="back-button">
+            <div id="back-arrow"><img src=".\assets\back.png" alt="" id="back-image"></div>
+            <div id="back-text">BACK</div>
+        </button>
+        <div id="loader-body-page2">
+            <div class="loader">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div id="card">
+            <div id="profile-pic"><img src="" alt="" id="profile-pic-img"></div>
+            <div id="profile-details">
+                <div id="column-left">
+                    <div class = "ext" id="left-up"><p class="color">First Name : </p><p class="color-next" id="profile-firstName"> </p></div>
+                    <div class = "int"><p class="color">Last Name : </p><p class="color-next" id="profile-lastName"> </p></div>
+                    <div class = "ext"><p class="color">Username : </p><p class="color-next" id="profile-username"> </p></div>
+                    <div class = "int"><p class="color">Country : </p><p class="color-next" id="profile-country"> </p></div>
+                    <div class = "ext" id="left-down"><p class="color">City : </p><p class="color-next" id="profile-city"> </p></div>
+                </div>
+                <div id="column-right">
+                    <div class = "int" id="right-up"><p class="color"># of Friends : </p><p class="color-next" id="profile-friends"> </p></div>
+                    <div class = "ext"><p class="color">Current Rating : </p><p class="color-next" id="profile-rating"> </p></div>
+                    <div class = "int"><p class="color">Maximum Rating : </p><p class="color-next" id="profile-max-rating"> </p></div>
+                    <div class = "ext"><p class="color">Current Rank : </p><p class="color-next" id="profile-rank"> </p></div>
+                    <div class = "int" id="right-down"><p class="color">Maximum Rank : </p><p class="color-next" id="profile-max-rank"> </p></div>
+                </div>
+            </div>
+        </div>
+    </page-2>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="script.js"></script>
+</body>
+</html>
